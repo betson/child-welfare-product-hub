@@ -1,5 +1,16 @@
-.usa-disclaimer {
-  text-align: center;
+.usa-disclaimer-official {
+  margin-left: 1.5rem;
+}
+.usa-disclaimer-stage {
+  margin-right: 1.5rem;
+}
+@media screen and (min-width: 951px) {
+  .usa-disclaimer-official {
+    margin-left: 3rem;
+  }
+  .usa-disclaimer-stage {
+    margin-right: 3rem;
+  }
 }
 .usa-site-navbar {
   padding-top: 1rem;
