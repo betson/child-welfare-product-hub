@@ -6,6 +6,6 @@
   {
     "title": "{% if nav.federalist-title %}{{ nav.federalist-title }}{% else %}{{ nav.title }}{% endif %}",
     "href": "{{ nav.path }}"
-  },
+  }{% if forloop.last == false %},{% endif %}
   {% endfor %}
 ]
