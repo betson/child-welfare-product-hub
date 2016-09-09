@@ -22,9 +22,6 @@ colors:
     button:
       background: '#dce4ef'
       text: '#112e51'
-  footer:
-    background: '#323a45'
-    text: '#fff'
 
 analytics:
   google:

@@ -27,9 +27,6 @@ $banner-text-color:       {{ site.colors.banner.text }};
 $banner-button-color:     {{ site.colors.banner.button.background }};
 $banner-button-text-color:       {{ site.colors.banner.button.text }};
 
-$footer-background-color:  {{ site.colors.footer.background }};
-$footer-text-color:        {{ site.colors.footer.text }};
-
 // Width of the content area
 $content-width:    800px;
 
@@ -61,6 +58,5 @@ $on-laptop:        800px;
         "iframe",
         "pages",
         "projects",
-        "banners",
-        "footer"
+        "banners"
 ;
