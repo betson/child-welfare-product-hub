@@ -4,7 +4,7 @@
 [
   {% for nav in site.html_pages %}
   {
-    "title": "{{ nav.title }}",
+    "title": "{% if nav.federalist-title %}{{ nav.federalist-title }}{% else %}{{ nav.title }}{% endif %}",
     "href": "{{ nav.path }}"
   },
   {% endfor %}
