@@ -21,12 +21,12 @@ layout: base
     </div>
 
     <div class="usa-width-two-thirds">
-      {{ content }}
-      <div class="center-content">
-        {% if page.content-button-link %}
-          <a href="{{ page.content-button-link | prepend: site.baseurl }}" class="usa-button">{{ page.content-button-text }}</a>
-        {% endif %}
-      </div>
+      <section class="product-content">
+        <h1>Product Listing</h2>
+        <div id="product-listings">
+          {{ content }}
+        </div>
+      </section>
     </div>
   </div>
 </section>
