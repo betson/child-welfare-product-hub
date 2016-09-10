@@ -22,11 +22,6 @@ $button-text-color:        {{ site.colors.button.text }};
 
 $project-accent-color:     {{ site.colors.projects.accent }};
 
-$banner-background-color: {{ site.colors.banner.background }};
-$banner-text-color:       {{ site.colors.banner.text }};
-$banner-button-color:     {{ site.colors.banner.button.background }};
-$banner-button-text-color:       {{ site.colors.banner.button.text }};
-
 // Width of the content area
 $content-width:    800px;
 
@@ -57,6 +52,5 @@ $on-laptop:        800px;
         "hero",
         "iframe",
         "pages",
-        "projects",
-        "banners"
+        "projects"
 ;

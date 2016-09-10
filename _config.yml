@@ -16,12 +16,6 @@ colors:
   text: '#212121'
   projects:
     accent: '#02bfe7'
-  banner:
-    background: '#112e51'
-    text: '#fff'
-    button:
-      background: '#dce4ef'
-      text: '#112e51'
 
 analytics:
   google:
