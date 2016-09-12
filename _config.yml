@@ -52,7 +52,7 @@ forms:
 footer:
   image: https://placehold.it/100x100 # /assets/img/gsa-logo-dark.jpg
   twitter:
-    - ChildWelfareGov
+    - ACYFgov
 
 # Build settings
 markdown: kramdown
