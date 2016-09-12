@@ -12,7 +12,7 @@
 }
 #product-listings > ul > li {
 	list-style-type: none;
-	background-color: lightgray;
+	background-color: #F1F1F1;
 	margin: 5px;
 	display: inline;
 	float: left;
@@ -57,7 +57,7 @@ $product-lines-to-show: 4;
 	width: 100%;
 	margin-left: -5px;
 }
-// This is the ellipsis itself. It contains a 512x1 image gradient for IE9 (transparent at 0% -> #E9E9E9 at 50% -> #E9E9E9 at 100%)
+// This is the ellipsis itself. It contains a 512x1 image gradient for IE9 (transparent at 0% -> #F1F1F1 at 50% -> #F1F1F1 at 100%)
 .ellipsis:after {
 	content: '\2026';
 	box-sizing: content-box;
@@ -71,5 +71,5 @@ $product-lines-to-show: 4;
 	text-align: right;
 	background-size: 100% 100%;
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAABCAYAAACouxZ2AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABRSURBVHjaYnz58iUjAwMDCDPgoAmJMZIoh0+MFHlaYiYK5JlIUM9Ehl5a6KE2n1w1pIQVKfFFrBpqYHLTNQMJfEJsfGLI9CgYBaNgBAOAAAMA5VsDvF6uSQQAAAAASUVORK5CYII=');
-	background: linear-gradient(to right, rgba(233, 233, 233, 0), #E9E9E9 50%, #E9E9E9);
+	background: linear-gradient(to right, rgba(233, 233, 233, 0), #F1F1F1 50%, #F1F1F1);
 }
