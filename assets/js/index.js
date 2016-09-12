@@ -6,6 +6,11 @@
 
   function updateProductListings() {
     var listings = $('#product-listings>ul');
+
+    // Create 'Learn More' button to appear underneath each product listing
+    var learnButton = document.createElement('a');
+    learnButton.className = 'usa-button product-learn-more';
+    learnButton.appendChild(document.createTextNode("Learn more"));
     
     // Create <div><div><p> structure required for ellipsis solution
     // http://www.mobify.com/blog/multiline-ellipsis-in-pure-css/
@@ -18,6 +23,7 @@
       var ellipsisCopy = ellipsisDiv.cloneNode(true);
       $(this).children('p').detach().appendTo(ellipsisCopy.children[0]);
       $(this).append(ellipsisCopy);
+      $(this).append(learnButton.cloneNode(true));
     });
   }
 
