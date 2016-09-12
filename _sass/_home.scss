@@ -25,6 +25,7 @@
 }
 #product-listings img{
 	max-height: 11em;
+	width: 100%;
 }
 @include media-query($small) {
 	#product-listings > ul > li {
