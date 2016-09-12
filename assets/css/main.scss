@@ -28,6 +28,11 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// Breakpoints of USWDS
+$large:            1201px;
+$medium:           600px;
+$small:            481px;
+
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
