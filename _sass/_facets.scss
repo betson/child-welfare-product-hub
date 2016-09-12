@@ -1,0 +1,22 @@
+.facets {
+	background-color: #f1f1f1;
+    min-height: 100rem;
+    overflow: auto;
+    padding: 4rem 2rem 3rem 3rem;
+}
+@include media-query($medium) {
+	.facets {
+		display: none !important;
+	}
+}
+.facets h1 {
+	font-size: 0.8em;
+	color: $text-color;
+	margin-bottom: 0.5em;
+}
+.facets-search {
+	margin-top: 5rem;
+}
+.facets-search button, .facets-search button:hover, .facets-search button:visited, .facets-search button:focus, .facets-search button:active {
+	background-color: $headers-color;
+}
