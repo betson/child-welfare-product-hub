@@ -6,26 +6,17 @@
   position: relative;
 }
 .hero-content {
-  background-color: transparentize($text-color, .6);
-  bottom: 20px;
-  left: 50%;
-  margin-left: -30%;
   padding-top: 20px;
-  position: absolute;
+  width: 74%;
+  margin: 0 auto;
   text-align: center;
-  width: 60%;
 }
 .hero-content h1 {
-  color: white;
-  font-size: 36px;
-  font-weight: 100;
-  line-height: 50px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: .3em;
-  padding-right: .3em;
+  font-size: 5rem;
 }
-.hero-content .usa-button {
-  font-size: 22px;
-  line-height: 30px;
+.hero-content h2 {
+  font-weight: 500;
+}
+.hero-content h1, .hero-content h2, .hero-content a {
+  color: white;
 }

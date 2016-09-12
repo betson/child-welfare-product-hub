@@ -9,8 +9,8 @@ feature_image: /assets/img/feature-background.jpg
 colors:
   background: '#ffffff'
   button:
-    background: '#0071bc'
-    hover: '#3e94cf'
+    background: '#e31c3d'
+    hover: '#cd2026'
     text: '#fff'
   headers: '#205493'
   text: '#212121'
