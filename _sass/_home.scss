@@ -4,16 +4,21 @@
 .product-content h2 {
 	font-size: 18px;
 }
-#product-listings > ul {
-}
 #product-listings > ul > li {
 	list-style-type: none;
-	display: inline;
-	float: left;
 	background-color: lightgray;
 	margin: 5px;
+	display: inline;
+	float: left;
 	width: 46%;
 }
 #product-listings img{
 	max-height: 150px;
+}
+@include media-query($small) {
+	#product-listings > ul > li {
+		float: none;
+		display: block;
+		width: 100%;
+	}
 }
