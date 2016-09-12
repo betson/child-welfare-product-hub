@@ -3,6 +3,12 @@
 }
 .product-content h2 {
 	font-size: 18px;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.product-content p {
+	margin-left: 1em;
+	margin-right: 1em;
 }
 #product-listings > ul > li {
 	list-style-type: none;
@@ -21,4 +27,49 @@
 		display: block;
 		width: 100%;
 	}
+}
+
+// Break text at 4 lines and use ellipsis for the overflow
+// Derived via http://www.mobify.com/blog/multiline-ellipsis-in-pure-css/
+// (also requires a <div> and <p> within the wrapper .ellipsis <div>)
+$product-line-height: 1.5em;
+$product-lines-to-show: 4;
+.ellipsis p {
+	line-height: 1.5em;
+	margin: 0;
+}
+.ellipsis {
+	width: auto;
+	overflow: hidden;
+	line-height: $product-line-height;
+	max-height: $product-line-height * $product-lines-to-show;
+	margin: 0 1em;
+	margin-bottom: 1em;
+}
+.ellipsis:before {
+	content: '';
+	float: left;
+	width: 5px;
+	height: $product-line-height * $product-lines-to-show;
+}
+.ellipsis > *:first-child {
+	float: right;
+	width: 100%;
+	margin-left: -5px;
+}
+// This is the ellipsis itself. It contains a 512x1 image gradient for IE9 (transparent at 0% -> #E9E9E9 at 50% -> #E9E9E9 at 100%)
+.ellipsis:after {
+	content: '\2026';
+	box-sizing: content-box;
+	float: right;
+	position: relative;
+	top: -1 * $product-line-height;
+	left: 100%;
+	width: 3em;
+	margin-left: -3em;
+	padding-right: 5px;
+	text-align: right;
+	background-size: 100% 100%;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAABCAYAAACouxZ2AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABRSURBVHjaYnz58iUjAwMDCDPgoAmJMZIoh0+MFHlaYiYK5JlIUM9Ehl5a6KE2n1w1pIQVKfFFrBpqYHLTNQMJfEJsfGLI9CgYBaNgBAOAAAMA5VsDvF6uSQQAAAAASUVORK5CYII=');
+	background: linear-gradient(to right, rgba(233, 233, 233, 0), #E9E9E9 50%, #E9E9E9);
 }
