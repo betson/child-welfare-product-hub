@@ -10,6 +10,7 @@
     // Create 'Learn More' button to appear underneath each product listing
     var learnButton = document.createElement('a');
     learnButton.className = 'usa-button product-learn-more';
+    learnButton.href = '/product-1'; // TODO Automate for all pages
     learnButton.appendChild(document.createTextNode("Learn more"));
     
     // Create <div><div><p> structure required for ellipsis solution

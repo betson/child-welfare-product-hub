@@ -10,7 +10,7 @@ hero-button-link: /about/
 product-button-text: "Learn more"
 ---
 - ![Alt text]({{'https://placehold.it/300x200' | prepend: site.baseurl }} "Optional title")
-## Product Title
+## [Product Title](/product-1 "Product Page")
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
 - ![Alt text]({{'https://placehold.it/300x200' | prepend: site.baseurl }} "Optional title")
 ## Product Title
