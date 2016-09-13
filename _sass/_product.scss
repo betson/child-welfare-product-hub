@@ -3,12 +3,8 @@
   margin-top: 2em;
 }
 .nav-back {
-  text-decoration: none;
   font-size: 1em;
   font-weight: 700;
-}
-.nav-back:focus, .nav-back:hover {
-	text-decoration: underline;
 }
 .product-img {
 	max-width: 95%;
@@ -26,10 +22,4 @@
 }
 .product-details p {
 	margin-top: 0;
-}
-.product-details a {
-	text-decoration: none;
-}
-.product-details a:hover, .product-details a:focus {
-	text-decoration: underline;
 }
