@@ -1,7 +1,8 @@
 body,
-p, ul, ol, li, a  {
+p, ul, ol, li {
   color: $text-color;
 }
+a,
 h1, h2, h3, h4, h5, h6 {
   color: $headers-color;
 }
@@ -30,9 +31,6 @@ form {
 .usa-content > h5,
 .usa-content > h6 {
   max-width: 62.5rem;
-}
-a:visited {
-  color: inherit;
 }
 
 div.skip-nav a {

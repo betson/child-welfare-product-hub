@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+<div class="usa-grid back-navigation">
+  <div class="usa-width-one-whole">
+    <a href="/" class="nav-back">&lt; back</a>
+  </div>
+</div>
+<main class="usa-grid" id="main">
+  <div class="usa-width-one-half usa-content">
+    {% if page.image %}
+      <img src="{{ page.image | prepend: site.baseurl }}" class="product-img">
+    {% endif %}
+  </div>
+  <div class="usa-width-one-half usa-content product-details">
+    {{ content }}
+  </div>
+</main>
