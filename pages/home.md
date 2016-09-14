@@ -10,17 +10,14 @@ hero-button-link: /about/
 product-button-text: "Learn more"
 ---
 - ![Alt text](https://placehold.it/300x200 "Optional title")
-## [Product Title]({{/product-1 | prepend: site.baseurl }} "Product Page")
+## [Product Title]({{'/product-1' | prepend: site.baseurl }} "Product Page")
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-
 - ![Alt text](https://placehold.it/300x200 "Optional title")
 ## Product Title
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-
 - ![Alt text](https://placehold.it/300x200 "Optional title")
 ## Product Title
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-
 - ![Alt text](https://placehold.it/300x200 "Optional title")
 ## Submit your product
 This hub is a wiki and can be edited by the public. Adding your own product is easy!
