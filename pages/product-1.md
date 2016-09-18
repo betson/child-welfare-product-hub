@@ -1,7 +1,7 @@
 ---
 layout: product
 title: Product Title
-permalink: /product-1
+permalink: /product-1.html
 image: /assets/img/feature-background.jpg
 ---
 # Product Title
