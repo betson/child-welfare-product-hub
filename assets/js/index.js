@@ -8,11 +8,11 @@
 
   function updateProductListings() {
     var listings = $('#product-listings>ul');
+    if(!listings.length) { return; }
 
     // Create 'Learn More' button to appear underneath each product listing
     var learnButton = document.createElement('a');
     learnButton.className = 'usa-button product-learn-more';
-    learnButton.href = '{{'/product-1' | prepend: site.baseurl }}'; // TODO Automate for all pages
     learnButton.appendChild(document.createTextNode("Learn more"));
     
     // Create <div><div><p> structure required for ellipsis solution
@@ -23,10 +23,18 @@
     ellipsisDiv.appendChild(innerDiv);
 
     listings.children().each(function() {
+      // Rearrange DOM for ellipsis
       var ellipsisCopy = ellipsisDiv.cloneNode(true);
       $(this).children('p').detach().appendTo(ellipsisCopy.children[0]);
       $(this).append(ellipsisCopy);
-      $(this).append(learnButton.cloneNode(true));
+
+      // Add 'Learn More' button with appropriate hyperlink
+      var productLink = $(this).find('a').first().attr('href');
+      var newButton = learnButton.cloneNode(true);
+      if(productLink) {
+        newButton.href = productLink; 
+      }
+      $(this).append(newButton);
     });
   }
 
