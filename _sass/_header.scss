@@ -1,8 +1,37 @@
+.usa-site-header {
+  background-color: $headers-color;
+}
 .usa-disclaimer-official {
   margin-left: 1.5rem;
 }
 .usa-disclaimer-stage {
   margin-right: 1.5rem;
+}
+.site-header-navbar {
+  border-bottom: none;
+}
+.usa-site-header .usa-button-list {
+  float: right;
+  display: none;
+  margin-top: -5px;
+}
+.usa-site-header .usa-button-list li {
+  display: inline;
+}
+.usa-site-header .usa-button-list .usa-button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.usa-site-header .site-logo {
+  margin-left: 1.5rem;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+}
+.site-logo a {
+  color: #fff;
+}
+.site-logo em {
+  font-size: 1.4rem;
+  line-height: 4rem;
 }
 @media screen and (min-width: 951px) {
   .usa-disclaimer-official {
@@ -10,5 +39,26 @@
   }
   .usa-disclaimer-stage {
     margin-right: 3rem;
+  }
+  .site-header-navbar {
+    display: inline-block;
+    height: 8rem;
+    width: 100%;
+  }
+  .usa-site-header .usa-button-list {
+    line-height: 8rem;
+    margin-top: 0;
+    display: block;
+    padding-right: 3rem;
+  }
+  .site-logo {
+    margin-top: 0;
+  }
+  .usa-site-header .site-logo {
+    margin-left: 3rem;
+  }
+  .site-logo em {
+    font-size: 2rem;
+    line-height: 8rem;
   }
 }
