@@ -2,7 +2,7 @@
 layout: product
 title: Rate My Foster Home App
 permalink: /rate-my-foster-home.html
-image: /assets/img/feature-background.jpg
+image: /assets/img/product-images/RateMyFosterHome_Large.jpg
 ---
 # Rate My Foster Home App
 
@@ -21,7 +21,7 @@ RateMyFosterHome.Com is a hybrid (web SaaS and mobile) app that enables Social w
 - Create a movement in which technology and beneficiary-centric data is used to improve the child welfare system.
 
 ## Contact
-[http://www.ratemyfosterhome.com/contact.html](http://www.ratemyfosterhome.com/contact.html "Contact E-Mail Address")
+[http://www.ratemyfosterhome.com/contact.html](http://www.ratemyfosterhome.com/contact.html "Contact Website")
 
 ## Testimonials
 
