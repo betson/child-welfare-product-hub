@@ -20,3 +20,6 @@
 .facets-search button, .facets-search button:hover, .facets-search button:visited, .facets-search button:focus, .facets-search button:active {
 	background-color: $headers-color;
 }
+.facets input[type="checkbox"] {
+	z-index: -1;
+}
