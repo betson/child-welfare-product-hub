@@ -10,7 +10,7 @@ layout: base
 <main class="usa-grid" id="main">
   <div class="usa-width-one-half usa-content">
     {% if page.image %}
-      <img src="{{ page.image | prepend: site.baseurl }}" class="product-img">
+      <img src="{{ page.image | prepend: site.baseurl }}" class="product-img" alt="{{ page.title }}" title="Product Image">
     {% endif %}
   </div>
   <div class="usa-width-one-half usa-content product-details">
