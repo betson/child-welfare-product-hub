@@ -10,10 +10,10 @@ hero-button-text: "Submit your product"
 hero-button-link: /about/
 product-button-text: "Learn more"
 ---
-- ![Alt text](https://placehold.it/300x200 "Optional title")
+- ![Rate My Foster Home App]({{'/assets/img/product-images/RateMyFosterHome_Thumb.jpg' | prepend: site.baseurl }} "Product Thumbnail")
 ## [Rate My Foster Home App]({{'/rate-my-foster-home.html' | prepend: site.baseurl }} "Product Page")
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-- ![Alt text](https://placehold.it/300x200 "Optional title")
+- ![Unify App]({{'/assets/img/product-images/Unify_Thumb.jpg' | prepend: site.baseurl }} "Product Thumbnail")
 ## [Unify App]({{'/unify.html' | prepend: site.baseurl }} "Product Page")
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
 - ![Alt text](https://placehold.it/300x200 "Optional title")
