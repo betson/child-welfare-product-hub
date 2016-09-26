@@ -7,7 +7,6 @@ hero-image: /assets/img/feature-background.jpg
 hero-heading: "Child Welfare Product Hub"
 hero-text: "Find innovative products for youth, families, and child welfare service providers"
 hero-button-text: "Submit your product"
-hero-button-link: /about/
 product-button-text: "Learn more"
 ---
 - ![Rate My Foster Home App]({{'/assets/img/product-images/RateMyFosterHome_Thumb.jpg' | prepend: site.baseurl }} "Product Thumbnail")
