@@ -2,12 +2,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  min-height: 32em;
+  min-height: 28em;
   position: relative;
 }
-.hero-content {
+.hero-unit .hero-content {
   padding-top: 20px;
-  width: 74%;
+  padding-left: 3em;
+  padding-right: 3em;
   margin: 0 auto;
   text-align: center;
 }
