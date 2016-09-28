@@ -8,7 +8,7 @@
 
 {
 	"users": {
-		{% for user in users %}{% assign user_array = site.array %}"{{ user }}:"
+		{% for user in users %}{% assign user_array = site.array %}"{{ user | slugify }}":
 			{% for nav in site.html_pages %}{% if nav.users %}
 				{% assign nav_users = nav.users | downcase %}{% if nav_users contains user %}{% assign user_array = user_array | push: nav.title %}{% endif %}
 			{% endif %}{% endfor %}{{ user_array | jsonify }}
@@ -16,7 +16,7 @@
 		{% endfor %}
 	},
 	"categories": {
-		{% for category in categories %}{% assign cat_array = site.array %}"{{ category }}:"
+		{% for category in categories %}{% assign cat_array = site.array %}"{{ category | slugify }}":
 			{% for nav in site.html_pages %}{% if nav.categories %}
 				{% assign nav_categories = nav.categories | downcase %}{% if nav_categories contains category %}{% assign cat_array = cat_array | push: nav.title %}{% endif %}
 			{% endif %}{% endfor %}{{ cat_array | jsonify }}
