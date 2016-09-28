@@ -27,77 +27,39 @@
       <label for="product-description">Short description (2-4 sentences) of product <span class="usa-additional_text">Required</span></label>
       <textarea id="product-description" name="product-description" type="text" required="" aria-required="true"></textarea>
 
+      {% if site.data.facets.users %}
       <fieldset class="usa-fieldset-inputs usa-sans">
 
         <legend>Users of your product</legend>
 
         <ul class="usa-unstyled-list">
+          {% assign users = site.data.facets.users | split:',' %}
+          {% for user in users %} {% assign slug-user = user | downcase | slugify %}
           <li>
-            <input id="submit-agency-leadership" type="checkbox" name="user" value="agency-leadership">
-            <label for="submit-agency-leadership">Agency Leadership</label>
+            <input id="submit-{{slug-user}}" type="checkbox" name="user" value="{{slug-user}}">
+            <label for="submit-{{slug-user}}">{{user}}</label>
           </li>
-          <li>
-            <input id="submit-biological-families" type="checkbox" name="user" value="biological-families">
-            <label for="submit-biological-families">Biological Families</label>
-          </li>
-          <li>
-            <input id="submit-data-analysts" type="checkbox" name="user" value="data-analysts">
-            <label for="submit-data-analysts">Data Analysts</label>
-          </li>
-          <li>
-            <input id="submit-foster-families" type="checkbox" name="user" value="foster-families">
-            <label for="submit-foster-families">Foster Families</label>
-          </li>
-          <li>
-            <input id="submit-kinship-families" type="checkbox" name="user" value="kinship-families">
-            <label for="submit-kinship-families">Kinship Families</label>
-          </li>
-          <li>
-            <input id="submit-service-providers" type="checkbox" name="user" value="service-providers">
-            <label for="submit-service-providers">Service Providers</label>
-          </li>
-          <li>
-            <input id="submit-social-workers" type="checkbox" name="user" value="social-workers">
-            <label for="submit-social-workers">Social Workers</label>
-          </li>
-          <li>
-            <input id="submit-tech-leadership" type="checkbox" name="user" value="tech-leadership">
-            <label for="submit-tech-leadership">Technology Leadership</label>
-          </li>
+          {% endfor %}
         </ul>
-	  </fieldset>
+      </fieldset>
+      {% endif %}
 
-	  <fieldset class="usa-fieldset-inputs usa-sans">
+      {% if site.data.facets.categories %}
+      <fieldset class="usa-fieldset-inputs usa-sans">
 
         <legend>Categories your product falls under</legend>
 
         <ul class="usa-unstyled-list">
+          {% assign categories = site.data.facets.categories | split:',' %}
+          {% for category in categories %} {% assign slug-category = category | downcase | slugify %}
           <li>
-            <input id="submit-community" type="checkbox" name="category" value="community">
-            <label for="submit-community">Community Resources</label>
+            <input id="submit-{{slug-category}}" type="checkbox" name="category" value="{{slug-category}}">
+            <label for="submit-{{slug-category}}">{{category}}</label>
           </li>
-          <li>
-            <input id="submit-permanency" type="checkbox" name="category" value="permanency">
-            <label for="submit-permanency">Permanency</label>
-          </li>
-          <li>
-            <input id="submit-safety" type="checkbox" name="category" value="safety">
-            <label for="submit-safety">Safety</label>
-          </li>
-          <li>
-            <input id="submit-transitioning" type="checkbox" name="category" value="transitioning">
-            <label for="submit-transitioning">Transitioning Out</label>
-          </li>
-          <li>
-            <input id="submit-wellbeing" type="checkbox" name="category" value="wellbeing">
-            <label for="submit-wellbeing">Wellbeing</label>
-          </li>
-          <li>
-            <input id="submit-empowerment" type="checkbox" name="category" value="empowerment">
-            <label for="submit-empowerment">Youth Empowerment</label>
-          </li>
+          {% endfor %}
         </ul>
       </fieldset>
+      {% endif %}
 
       <input type="submit" value="Submit" />
 
