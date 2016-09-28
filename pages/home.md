@@ -15,6 +15,6 @@ RateMyFosterHome.com is a hybrid (web SaaS and mobile) app that enables Social w
 - ![Unify App]({{'/assets/img/product-images/Unify_Thumb.jpg' | prepend: site.baseurl }} "Product Thumbnail")
 ## [Unify App]({{'/unify.html' | prepend: site.baseurl }} "Product Page")
 Unify provides young people with interactive videos, self-coaching activities, and planning tools to help them identify and set personal goals.
-- ![Alt text](https://placehold.it/300x200 "Optional title")
+- ![Alt text]({{'/assets/img/code2.jpg' | prepend: site.baseurl }} "Product Thumbnail")
 ## Submit your product
 This hub is a wiki and can be edited by the public. Adding your own product is easy!
