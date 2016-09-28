@@ -4,17 +4,8 @@
     <div class="usa-grid-full">
       <nav class="usa-footer-nav usa-width-two-thirds">
         <ul class="usa-unstyled-list">
-          <li class="usa-width-one-fourth usa-footer-primary-content">
-            <a class="usa-footer-primary-link" href="http://www.acf.hhs.gov/acyf">Administration on Children, Youth &amp; Families</a>
-          </li>
-          <li class="usa-width-one-fourth usa-footer-primary-content">
-            <a class="usa-footer-primary-link" href="http://Childwelfare.gov">Child Welfare Information Gateway</a>
-          </li>
-          <li class="usa-width-one-fourth usa-footer-primary-content">
-            <a class="usa-footer-primary-link" href="http://www.acf.hhs.gov/cb">Children's Bureau</a>
-          </li>
-          <li class="usa-width-one-fourth usa-footer-primary-content">
-            <a class="usa-footer-primary-link" href="http://www.hhs.gov/">U.S. Department of Health and Human Services</a>
+          <li class="usa-width-one-whole usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://www.hhs.gov/"><img class="hhs-footer-img" src="{{'/assets/img/hhs-logo.png' | prepend: site.baseurl }}" alt="Health and Human Services Logo">U.S. Department of Health and Human Services</a>
           </li>
         </ul>
       </nav>
@@ -33,7 +24,7 @@
     <div class="usa-grid">
       <div class="usa-footer-logo">
         {% if site.footer.image %}
-          <img class="usa-footer-slim-logo-img" src="{{site.footer.image | prepend: site.baseurl }}" alt="Administration for Children and Families Logo">
+          <a href="http://www.acf.hhs.gov/acyf"><img class="usa-footer-slim-logo-img" src="{{site.footer.image | prepend: site.baseurl }}" alt="Administration for Children and Families Logo"></a>
         {% endif %}
       </div>
     </div>
