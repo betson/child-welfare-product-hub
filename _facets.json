@@ -2,7 +2,7 @@
 ---
 
 {% assign users_string = "agency leadership,biological families,data analysts,foster families,kinship families,service providers,social workers,technology leadership" %}
-{% assign categories_string = "community resources,permanency,safety,transitioning out,wellbeing,empowerment" %}
+{% assign categories_string = "community resources,permanency,safety,transitioning out,wellbeing,youth empowerment" %}
 {% assign users = users_string | split:',' %}
 {% assign categories = categories_string | split:',' %}
 
