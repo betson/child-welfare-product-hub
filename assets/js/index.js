@@ -1,9 +1,12 @@
 ---
 ---
+var childWelfare = childWelfare || {};
+
 (function (document, window, $) {
   $(document).ready(function(){
     fixMarkdownRendering();
     updateProductListings();
+    loadJson('_facets.json', "facets");
   });
 
   function updateProductListings() {
@@ -104,5 +107,13 @@
   // Our sign is whether the Markdown "##" still exists
   function wasRenderedCorrectly(listings) {
     return listings.children().first().text().indexOf('##') === -1;
+  }
+
+  // Download and parse a JSON file. Store the output in the
+  // provided variable name on the parent childWelfare object.
+  function loadJson(file, varName) {
+    $.getJSON(file, function(json) {
+      childWelfare[varName] = json;
+    });
   }
 })(document, window, $);
