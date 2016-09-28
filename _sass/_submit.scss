@@ -38,9 +38,11 @@
     -o-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+    overflow-y: auto;
     visibility: visible; }
   .modal h2 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 0.25em; }
   .modal p {
     line-height: 1.3em; }
   .modal .action {
@@ -84,3 +86,18 @@
 body.no-scroll {
   height: 100%;
   overflow: hidden; }
+
+@media screen and (min-width: 600px) {
+  .product-form {
+      max-width: 44rem;
+  }
+}
+  .product-form fieldset {
+    margin-top: 2em;
+  }
+  .product-form legend {
+    margin-bottom: 0;
+  }
+  .product-form fieldset > ul {
+    margin-top: 3rem;
+  }

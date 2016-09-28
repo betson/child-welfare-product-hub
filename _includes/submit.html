@@ -2,10 +2,106 @@
   <div class="modal">
     <div class="close">x</div>
     <h2>Submit a new product</h2>
-    <p>Alabama enables residents to register through their online voter registration portal. Click the link below to be redirected to your voter registration website.</p>
-    <div class="action">
-      <a id="online-voting" class="button state-link" href="https://www.alabamavotes.gov/olvr/default.aspx?ref=voteusa" target="_blank">Register to Vote</a>
-    </div>
+    <form class="usa-form product-form">
+      <label for="product-name">Product Name <span class="usa-additional_text">Required</span></label>
+      <input id="product-name" name="product-name" type="text" required="" aria-required="true">
+
+      <fieldset>
+        <legend>Your Organization</legend>
+        <label for="organization-name">Organization name <span class="usa-additional_text">Required</span></label>
+        <input id="organization-name" name="organization-name" type="text" required="" aria-required="true">
+
+        <label for="organization-url">Website URL <span class="usa-additional_text">Required</span></label>
+        <input id="organization-url" name="organization-url" type="url" required="" aria-required="true">
+
+        <label for="poc-name">Name of POC for questions, collaborations, updates <span class="usa-additional_text">Required</span></label>
+        <input id="poc-name" name="poc-name" type="text" required="" aria-required="true">
+
+        <label for="poc-title">Title of POC</label>
+        <input id="poc-title" name="poc-title">
+
+        <label for="poc-email">Email of POC <span class="usa-additional_text">Required</span></label>
+        <input id="poc-email" name="poc-email" type="email" required="" aria-required="true">
+      </fieldset>
+
+      <label for="product-description">Short description (2-4 sentences) of product <span class="usa-additional_text">Required</span></label>
+      <textarea id="product-description" name="product-description" type="text" required="" aria-required="true"></textarea>
+
+      <fieldset class="usa-fieldset-inputs usa-sans">
+
+        <legend>Users of your product</legend>
+
+        <ul class="usa-unstyled-list">
+          <li>
+            <input id="submit-agency-leadership" type="checkbox" name="user" value="agency-leadership">
+            <label for="submit-agency-leadership">Agency Leadership</label>
+          </li>
+          <li>
+            <input id="submit-biological-families" type="checkbox" name="user" value="biological-families">
+            <label for="submit-biological-families">Biological Families</label>
+          </li>
+          <li>
+            <input id="submit-data-analysts" type="checkbox" name="user" value="data-analysts">
+            <label for="submit-data-analysts">Data Analysts</label>
+          </li>
+          <li>
+            <input id="submit-foster-families" type="checkbox" name="user" value="foster-families">
+            <label for="submit-foster-families">Foster Families</label>
+          </li>
+          <li>
+            <input id="submit-kinship-families" type="checkbox" name="user" value="kinship-families">
+            <label for="submit-kinship-families">Kinship Families</label>
+          </li>
+          <li>
+            <input id="submit-service-providers" type="checkbox" name="user" value="service-providers">
+            <label for="submit-service-providers">Service Providers</label>
+          </li>
+          <li>
+            <input id="submit-social-workers" type="checkbox" name="user" value="social-workers">
+            <label for="submit-social-workers">Social Workers</label>
+          </li>
+          <li>
+            <input id="submit-tech-leadership" type="checkbox" name="user" value="tech-leadership">
+            <label for="submit-tech-leadership">Technology Leadership</label>
+          </li>
+        </ul>
+	  </fieldset>
+
+	  <fieldset class="usa-fieldset-inputs usa-sans">
+
+        <legend>Categories your product falls under</legend>
+
+        <ul class="usa-unstyled-list">
+          <li>
+            <input id="submit-community" type="checkbox" name="category" value="community">
+            <label for="submit-community">Community Resources</label>
+          </li>
+          <li>
+            <input id="submit-permanency" type="checkbox" name="category" value="permanency">
+            <label for="submit-permanency">Permanency</label>
+          </li>
+          <li>
+            <input id="submit-safety" type="checkbox" name="category" value="safety">
+            <label for="submit-safety">Safety</label>
+          </li>
+          <li>
+            <input id="submit-transitioning" type="checkbox" name="category" value="transitioning">
+            <label for="submit-transitioning">Transitioning Out</label>
+          </li>
+          <li>
+            <input id="submit-wellbeing" type="checkbox" name="category" value="wellbeing">
+            <label for="submit-wellbeing">Wellbeing</label>
+          </li>
+          <li>
+            <input id="submit-empowerment" type="checkbox" name="category" value="empowerment">
+            <label for="submit-empowerment">Youth Empowerment</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+
+    </form>
   </div>
   <div class="overlay">
   </div>
