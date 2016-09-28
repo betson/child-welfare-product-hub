@@ -9,7 +9,11 @@
   },
   {% endfor %}
   {
-  	"title": "Text and image for product submission listing",
-  	"href": "_data/submission-listing.yml"
+    "title": "Text and image for product submission listing",
+    "href": "_data/submission-listing.yml"
+  },
+  {
+    "title": "Users and categories",
+    "href": "_data/facets.yml"
   }
 ]
