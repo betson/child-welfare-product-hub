@@ -6,6 +6,7 @@ var childWelfare = childWelfare || {};
   $(document).ready(function(){
     fixMarkdownRendering();
     updateProductListings();
+    insertSubmissionListing();
     loadJson('_facets.json', "facets");
     triggerFacetedSearch();
   });
@@ -40,6 +41,43 @@ var childWelfare = childWelfare || {};
       }
       $(this).append(newButton);
     });
+  }
+
+  // This is very similar to the prior function that
+  // reorganizes the DOM. But in this case we're going
+  // to create the content from scratch.
+  function insertSubmissionListing() {
+    var listings = $('#product-listings>ul');
+    if(!listings.length) { return; }
+
+    var listing = document.createElement('li');
+    var img = document.createElement('img');
+    var header = document.createElement('h2');
+    var description = document.createElement('p');
+    var button = document.createElement('a');
+
+    img.src = "{{ site.data.submission-listing.image | prepend: site.baseurl }}";
+    img.alt = "{{ site.data.submission-listing.title }}";
+    img.title = "Product Thumbnail";
+
+    header.appendChild(document.createTextNode("{{ site.data.submission-listing.title }}"));
+
+    description.appendChild(document.createTextNode("{{ site.data.submission-listing.description }}"));
+    var ellipsisDiv = document.createElement('div');
+    ellipsisDiv.className = "ellipsis";
+    var innerDiv = document.createElement('div');
+    ellipsisDiv.appendChild(innerDiv);
+    ellipsisDiv.children[0].appendChild(description);
+
+    button.className = "usa-button product-learn-more js-load-submission";
+    button.appendChild(document.createTextNode("{{ site.data.submission-listing.link }}"));
+    $(button).bind("click", function(e) {
+      e.preventDefault();
+      childWelfare.website.loadModal();
+    });
+
+    $(listing).append(img, header, ellipsisDiv, button);
+    listings.append(listing);
   }
 
   // Federalist isn't rendering the Markdown as expected. This
