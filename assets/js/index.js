@@ -4,7 +4,6 @@
   $(document).ready(function(){
     fixMarkdownRendering();
     updateProductListings();
-    //ajaxifyContactForm();
   });
 
   function updateProductListings() {
@@ -105,27 +104,5 @@
   // Our sign is whether the Markdown "##" still exists
   function wasRenderedCorrectly(listings) {
     return listings.children().first().text().indexOf('##') === -1;
-  }
-
-  function ajaxifyContactForm () {
-    var contactForm = $('#contact'),
-        originalUrl = contactForm.attr('action');
-        contactBtn  = $('.contact [type=submit]'),
-        alert       = $('#contact-alert');
-
-    contactBtn.on('click', function (e) {
-      e.preventDefault();
-      var url = [originalUrl, contactForm.serialize()].join('?'),
-          img = $('<img></img');
-
-      img.on('error', function (e) {
-        console.log('known error', e);
-      });
-
-      contactBtn.val('Thank you');
-      contactBtn.attr('disabled', true);
-      img.attr('src', url);
-
-    });
   }
 })(document, window, $);
