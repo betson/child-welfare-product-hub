@@ -1,0 +1,26 @@
+---
+---
+
+{% assign users_string = "agency leadership,biological families,data analysts,foster families,kinship families,service providers,social workers,technology leadership" %}
+{% assign categories_string = "community resources,permanency,safety,transitioning out,wellbeing,empowerment" %}
+{% assign users = users_string | split:',' %}
+{% assign categories = categories_string | split:',' %}
+
+{
+	"users": {
+		{% for user in users %}{% assign user_array = site.array %}"{{ user }}:"
+			{% for nav in site.html_pages %}{% if nav.users %}
+				{% assign nav_users = nav.users | downcase %}{% if nav_users contains user %}{% assign user_array = user_array | push: nav.title %}{% endif %}
+			{% endif %}{% endfor %}{{ user_array | jsonify }}
+		{% if forloop.last == false %},{% endif %}
+		{% endfor %}
+	},
+	"categories": {
+		{% for category in categories %}{% assign cat_array = site.array %}"{{ category }}:"
+			{% for nav in site.html_pages %}{% if nav.categories %}
+				{% assign nav_categories = nav.categories | downcase %}{% if nav_categories contains category %}{% assign cat_array = cat_array | push: nav.title %}{% endif %}
+			{% endif %}{% endfor %}{{ cat_array | jsonify }}
+		{% if forloop.last == false %},{% endif %}
+		{% endfor %}
+	}
+}

@@ -5,6 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://example.gov" # the base hostname & protocol for your site
 logo: /assets/img/logo-main.gif
 feature_image: /assets/img/feature-background.jpg
+array: []
 
 colors:
   background: '#ffffff'
@@ -58,6 +59,7 @@ footer:
 markdown: kramdown
 include:
   - _navigation.json
+  - _facets.json
 exclude:
   - CONTRIBUTING.md
   - LICENSE.md
