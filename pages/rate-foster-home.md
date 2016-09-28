@@ -3,6 +3,8 @@ layout: product
 title: Rate My Foster Home App
 permalink: /rate-my-foster-home.html
 image: /assets/img/product-images/RateMyFosterHome_Large.jpg
+users: social workers, family resource workers, children, youth, families
+categories: permanency, safety, wellbeing
 ---
 # Rate My Foster Home App
 
