@@ -1,70 +1,71 @@
 <section>
   <div class="modal">
     <div class="close">x</div>
-    <h2>Submit a new product</h2>
-    <form class="usa-form product-form">
-      <label for="product-name">Product Name <span class="usa-additional_text">Required</span></label>
-      <input id="product-name" name="product-name" type="text" required="" aria-required="true">
+    <div class="modal-inner">
+      <h2>Submit a new product</h2>
+      <form class="usa-form product-form">
+        <label for="product-name">Product Name <span class="usa-additional_text">Required</span></label>
+        <input id="product-name" name="product-name" type="text" required="" aria-required="true">
 
-      <fieldset>
-        <legend>Your Organization</legend>
-        <label for="organization-name">Organization name <span class="usa-additional_text">Required</span></label>
-        <input id="organization-name" name="organization-name" type="text" required="" aria-required="true">
+        <fieldset>
+          <legend>Your Organization</legend>
+          <label for="organization-name">Organization name <span class="usa-additional_text">Required</span></label>
+          <input id="organization-name" name="organization-name" type="text" required="" aria-required="true">
 
-        <label for="organization-url">Website URL <span class="usa-additional_text">Required</span></label>
-        <input id="organization-url" name="organization-url" type="url" required="" aria-required="true">
+          <label for="organization-url">Website URL <span class="usa-additional_text">Required</span></label>
+          <input id="organization-url" name="organization-url" type="url" required="" aria-required="true">
 
-        <label for="poc-name">Name of Point of Contact for questions, collaborations, updates <span class="usa-additional_text">Required</span></label>
-        <input id="poc-name" name="poc-name" type="text" required="" aria-required="true">
+          <label for="poc-name">Name of Point of Contact for questions, collaborations, updates <span class="usa-additional_text">Required</span></label>
+          <input id="poc-name" name="poc-name" type="text" required="" aria-required="true">
 
-        <label for="poc-title">Title of Point of Contact</label>
-        <input id="poc-title" name="poc-title">
+          <label for="poc-title">Title of Point of Contact</label>
+          <input id="poc-title" name="poc-title">
 
-        <label for="poc-email">Email of Point of Contact <span class="usa-additional_text">Required</span></label>
-        <input id="poc-email" name="poc-email" type="email" required="" aria-required="true">
-      </fieldset>
+          <label for="poc-email">Email of Point of Contact <span class="usa-additional_text">Required</span></label>
+          <input id="poc-email" name="poc-email" type="email" required="" aria-required="true">
+        </fieldset>
 
-      <label for="product-description">Short description (2-4 sentences) of product <span class="usa-additional_text">Required</span></label>
-      <textarea id="product-description" name="product-description" type="text" required="" aria-required="true"></textarea>
+        <label for="product-description">Short description (2-4 sentences) of product <span class="usa-additional_text">Required</span></label>
+        <textarea id="product-description" name="product-description" type="text" required="" aria-required="true"></textarea>
 
-      {% if site.data.facets.users %}
-      <fieldset class="usa-fieldset-inputs usa-sans">
+        {% if site.data.facets.users %}
+        <fieldset class="usa-fieldset-inputs usa-sans">
 
-        <legend>Users of your product</legend>
+          <legend>Users of your product</legend>
 
-        <ul class="usa-unstyled-list">
-          {% assign users = site.data.facets.users | split:',' %}
-          {% for user in users %} {% assign slug-user = user | downcase | slugify %}
-          <li>
-            <input id="submit-{{slug-user}}" type="checkbox" name="user" value="{{slug-user}}">
-            <label for="submit-{{slug-user}}">{{user}}</label>
-          </li>
-          {% endfor %}
-        </ul>
-      </fieldset>
-      {% endif %}
+          <ul class="usa-unstyled-list">
+            {% assign users = site.data.facets.users | split:',' %}
+            {% for user in users %} {% assign slug-user = user | downcase | slugify %}
+            <li>
+              <input id="submit-{{slug-user}}" type="checkbox" name="user" value="{{slug-user}}">
+              <label for="submit-{{slug-user}}">{{user}}</label>
+            </li>
+            {% endfor %}
+          </ul>
+        </fieldset>
+        {% endif %}
 
-      {% if site.data.facets.categories %}
-      <fieldset class="usa-fieldset-inputs usa-sans">
+        {% if site.data.facets.categories %}
+        <fieldset class="usa-fieldset-inputs usa-sans">
 
-        <legend>Categories your product falls under</legend>
+          <legend>Categories your product falls under</legend>
 
-        <ul class="usa-unstyled-list">
-          {% assign categories = site.data.facets.categories | split:',' %}
-          {% for category in categories %} {% assign slug-category = category | downcase | slugify %}
-          <li>
-            <input id="submit-{{slug-category}}" type="checkbox" name="category" value="{{slug-category}}">
-            <label for="submit-{{slug-category}}">{{category}}</label>
-          </li>
-          {% endfor %}
-        </ul>
-      </fieldset>
-      {% endif %}
+          <ul class="usa-unstyled-list">
+            {% assign categories = site.data.facets.categories | split:',' %}
+            {% for category in categories %} {% assign slug-category = category | downcase | slugify %}
+            <li>
+              <input id="submit-{{slug-category}}" type="checkbox" name="category" value="{{slug-category}}">
+              <label for="submit-{{slug-category}}">{{category}}</label>
+            </li>
+            {% endfor %}
+          </ul>
+        </fieldset>
+        {% endif %}
 
-      <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
 
-    </form>
+      </form>
+    </div>
   </div>
-  <div class="overlay">
-  </div>
+  <div class="overlay"></div>
 </section>

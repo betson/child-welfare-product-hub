@@ -13,7 +13,6 @@
   box-shadow: 0 3px 3px rgba(50, 58, 69, 0.2);
   box-sizing: border-box;
   opacity: 0;
-  padding: 2em 2em 1em;
   position: fixed;
   top: 0;
   visibility: hidden;
@@ -24,13 +23,23 @@
       height: 525px;
       left: 50%;
       margin-left: -285px;
-      padding: 2.25em 2em 1.5em;
       top: 2em;
-      width: 570px; } }
+      width: 570px; }
+    .modal-inner {
+      padding: 2.25em 2em 1.5em; } }
   @media screen and (min-width: 53.75em) {
     .modal {
       margin-left: -310px;
       width: 620px; } }
+  .modal-inner {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2em 2em 1em;
+  }
   .active.modal {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -38,7 +47,6 @@
     -o-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-    overflow-y: auto;
     visibility: visible; }
   .modal h2 {
     margin-top: 0.25em; }
