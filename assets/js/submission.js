@@ -4,7 +4,7 @@ var childWelfare = childWelfare || {};
 childWelfare.website = {
 
   bindModalClose: function() {
-    $(".close").bind("click", function(e){
+    $(".close, .overlay").bind("click", function(e){
       e.preventDefault();
       childWelfare.website.closeModal();
     });
