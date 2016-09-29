@@ -6,7 +6,11 @@ layout: base
   <div id="main" tabindex="-1" class="hero-unit" style="background-image: url('{{ page.hero-image | prepend: site.baseurl }}')">
     <div class="usa-grid">
       <div class="usa-width-one-whole hero-content">
+        {% if page.hero-logo %}
+        <img src="{{ page.hero-logo | prepend: site.baseurl }}" class="hero-logo" alt="{{ page.hero-heading }}" title="{{ page.hero-heading }}">
+        {% else %}
         <h1>{{ page.hero-heading}}</h1>
+        {% endif %}
         <h2>{{ page.hero-text }}</h2>
         <a class="usa-button js-load-submission" href="#">{{ page.hero-button-text }}</a>
       </div>
