@@ -35,6 +35,9 @@
 		display: block;
 		width: 100%;
 	}
+	#product-listings > ul {
+		margin-right: 2em;
+	}
 }
 
 // Break text at 4 lines and use ellipsis for the overflow

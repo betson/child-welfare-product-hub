@@ -27,3 +27,8 @@
 .hero-content h1, .hero-content h2, .hero-content a {
   color: white;
 }
+@include media-query($small) {
+  .hero-content h2 {
+    font-size: 1.75rem;
+  }
+}
