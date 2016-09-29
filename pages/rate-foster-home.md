@@ -27,4 +27,6 @@ RateMyFosterHome.Com is a hybrid (web SaaS and mobile) app that enables Social w
 
 ## Testimonials
 
-coming soon
+"I knew immediately when communication and behavior started becoming an issue in one of my cases, and I could get out ahead of it and fix the problem before it really blew up. I'm sure that if I didn't get the notification that something was going wrong early, this child would have had to be placed in a new home a few months down the line."
+
+\- Social worker, OK DHS
