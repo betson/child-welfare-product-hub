@@ -28,6 +28,10 @@
   color: white;
 }
 @include media-query($small) {
+  .hero-unit .hero-content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
   .hero-content h2 {
     font-size: 1.75rem;
   }
