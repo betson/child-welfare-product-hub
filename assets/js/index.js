@@ -46,7 +46,7 @@ var childWelfare = childWelfare || {};
         var title = $(this).find('h2').text();
         // Leave the final 'how to submit your product' listing,
         // but show and hide all others
-        if(title.toLowerCase().indexOf('submit your') === -1) {
+        if(title !== '{{ site.data.submission-listing.title }}') {
           if(productTitles[title]) {
             $(this).show();
           }
