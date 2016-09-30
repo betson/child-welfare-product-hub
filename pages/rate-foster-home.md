@@ -3,6 +3,8 @@ layout: product
 title: Rate My Foster Home App
 permalink: /rate-my-foster-home.html
 image: /assets/img/product-images/RateMyFosterHome_Large.jpg
+thumbnail: /assets/img/product-images/RateMyFosterHome_Thumb.jpg
+description: "RateMyFosterHome.com is a hybrid (web SaaS and mobile) app that enables Social workers, or family resource workers, to better manage caseloads."
 users: social workers, family resource workers, children, youth, families
 categories: permanency, safety, wellbeing
 ---

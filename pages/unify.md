@@ -3,6 +3,8 @@ layout: product
 title: Unify App
 permalink: /unify.html
 image: /assets/img/product-images/Unify_Large.jpg
+thumbnail: /assets/img/product-images/Unify_Thumb.jpg
+description: "Unify provides young people with interactive videos, self-coaching activities, and planning tools to help them identify and set personal goals."
 users: youth
 categories: transitioning out, wellbeing, youth empowerment
 ---

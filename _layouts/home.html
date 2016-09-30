@@ -28,7 +28,29 @@ layout: base
       <section class="product-content">
         <h1>Product Listing</h2>
         <div id="product-listings">
-          {{ content }}
+          <ul>
+            {% for prod in site.html_pages %}{% if prod.layout == 'product' %}
+            <li>
+              <img src="{{ prod.thumbnail | prepend: site.baseurl }}" alt="{{ prod.title }}" title="Product Thumbnail">
+              <h2><a href="{{ prod.url }}" title="Product Page">{{ prod.title }}</a></h2>
+              <div class="ellipsis">
+                <div>
+                  <p>{{ prod.description }}</p>
+                </div>
+              </div>
+              <a class="usa-button product-learn-more" href="{{ prod.url }}">{{ page.product-button-text }}</a>
+            </li>
+            {% endif %}{% endfor %}
+            <li>
+              <img src="{{ site.data.submission-listing.image | prepend: site.baseurl }}" alt="{{ site.data.submission-listing.title }}" title="Product Thumbnail">
+              <h2>{{ site.data.submission-listing.title }}</h2>
+              <div class="ellipsis">
+                <div>
+                  <p>{{ site.data.submission-listing.description }}</p>
+                </div>
+              </div>
+              <a class="usa-button product-learn-more js-load-submission">{{ site.data.submission-listing.link }}</a>
+          </ul>
         </div>
       </section>
     </div>
