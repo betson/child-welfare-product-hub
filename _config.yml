@@ -32,9 +32,6 @@ defaults:
   values:
     layout:
       - home
-      - page
-      - "project-list"
-      - project
 
 forms:
 - type: newsletter
@@ -49,6 +46,7 @@ forms:
     - type: hidden
       name: fbzx
       value: -7861934959779167198
+      - product
 
 footer:
   image: /assets/img/logo-acf-2x.png
