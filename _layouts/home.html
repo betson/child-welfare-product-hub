@@ -32,13 +32,13 @@ layout: base
             {% for prod in site.html_pages %}{% if prod.layout == 'product' %}
             <li>
               <img src="{{ prod.thumbnail | prepend: site.baseurl }}" alt="{{ prod.title }}" title="Product Thumbnail">
-              <h2><a href="{{ prod.url }}" title="Product Page">{{ prod.title }}</a></h2>
+              <h2><a href="{{ prod.url | prepend: site.baseurl }}" title="Product Page">{{ prod.title }}</a></h2>
               <div class="ellipsis">
                 <div>
                   <p>{{ prod.description }}</p>
                 </div>
               </div>
-              <a class="usa-button product-learn-more" href="{{ prod.url }}">{{ page.product-button-text }}</a>
+              <a class="usa-button product-learn-more" href="{{ prod.url | prepend: site.baseurl }}">{{ page.product-button-text }}</a>
             </li>
             {% endif %}{% endfor %}
             <li>
