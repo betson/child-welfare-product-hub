@@ -1,6 +1,6 @@
 # Site settings
 title: Child Welfare Product Hub
-description: A description of your website that will show up in search indexes and social media shares.
+description: "Find innovative technology products for youth, families, and child welfare service providers"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://example.gov" # the base hostname & protocol for your site
 feature_image: /assets/img/feature-background.jpg
