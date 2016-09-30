@@ -25,8 +25,28 @@
           <input id="poc-email" name="poc-email" type="email" required="" aria-required="true">
         </fieldset>
 
-        <label for="product-description">Short description (2-4 sentences) of product <span class="usa-additional_text">Required</span></label>
-        <textarea id="product-description" name="product-description" type="text" required="" aria-required="true"></textarea>
+        <fieldset>
+          <legend>Your Product</legend>
+          <fieldset class="usa-fieldset-inputs usa-sans" style="margin-top: 0;">
+            <legend class="usa-sr-only">Open Source</legend>
+            <ul class="usa-unstyled-list">
+              <li>
+                <input id="open-source-true" type="radio" checked name="open-source" value="open-source-true">
+                <label for="open-source-true">Open Source</label>
+              </li>
+              <li>
+                <input id="open-source-false" type="radio" name="open-source" value="open-source-false">
+                <label for="open-source-false">Not Open Source</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <label for="procurement-cost">Estimated cost of procurement</label>
+          <input id="procurement-cost" name="procurement-cost" type="text">
+
+          <label for="product-description">Short description (2-4 sentences) of product <span class="usa-additional_text">Required</span></label>
+          <textarea id="product-description" name="product-description" type="text" required="" aria-required="true"></textarea>
+        </fieldset>
 
         {% if site.data.facets.users %}
         <fieldset class="usa-fieldset-inputs usa-sans">
